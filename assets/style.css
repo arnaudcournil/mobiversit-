@@ -9,6 +9,11 @@ html {
   display: flex;
 }
 
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
 article {
     display: flex;
     align-items: center; /* Centrer verticalement */
@@ -22,6 +27,10 @@ article img {
 
 header {
   display: flex;
+}
+
+select {
+  width: 200px;
 }
 
 #logo {
@@ -74,4 +83,18 @@ footer{
   width: 100%;
   text-align: center;
   font-size: 0.8em;
+}
+
+/* collapse */
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+.open {
+  border : 1px solid #ccc;
+  max-height: 200px; /* Vous pouvez ajuster cette valeur */
 }
